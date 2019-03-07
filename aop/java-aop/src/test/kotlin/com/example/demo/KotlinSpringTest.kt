@@ -18,7 +18,7 @@ class KotlinSpringTest : WordSpec() {
         "Spring Extension" should {
             "have wired up the bean" {
                 bean shouldNotBe null
-                bean?.demo()
+                bean?.demo("Test Hello")
             }
         }
     }

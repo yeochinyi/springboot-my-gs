@@ -13,7 +13,7 @@ class DemoApplication{
 
 	@PostConstruct
 	fun done(){
-		demoService.demo()
+		demoService.demo("Hello!")
 	}
 }
 

@@ -8,10 +8,11 @@ class DemoService{
 
     @Autowired lateinit var demo2Service: Demo2Service
 
-    fun demo(){
-        println("demo")
+    fun demo(msg: String) : String{
+        println(msg)
         demo2Service.demo2()
         demo3()
+        return msg
     }
 
     // https://stackoverflow.com/questions/13564627/spring-aop-not-working-for-method-call-inside-another-method
